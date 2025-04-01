@@ -587,4 +587,4 @@ Clear-RecycleBin -Force -ErrorAction SilentlyContinue
 
 # Popup message to signal the payload is done
 
-#$done = New-Object -ComObject Wscript.Shell;$done.Popup("Update Completed",1)
+$done = New-Object -ComObject Wscript.Shell;$done.Popup("Update Completed",1)
